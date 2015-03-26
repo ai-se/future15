@@ -64,7 +64,7 @@
 % draft mode.
 %
 \documentclass[journal]{IEEEtran}
-\usepackage{blindtext}
+%\usepackage{blindtext}
 \usepackage{graphicx}
 
 % Some very useful LaTeX packages include:
@@ -113,20 +113,27 @@
 % The documentation is contained in the cite.sty file itself.
 
 
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\tion}[1]{\S\ref{sect:#1}}
+\newcommand{\fig}[1]{Figure~\ref{fig:#1}}
+\newcommand{\eq}[1]{Equation~\ref{eq:#1}}
 
 
 
 
 % *** GRAPHICS RELATED PACKAGES ***
 %
-\ifCLASSINFOpdf
+%ifCLASSINFOpdf
   % \usepackage[pdftex]{graphicx}
   % declare the path(s) where your graphic files are
   % \graphicspath{{../pdf/}{../jpeg/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
   % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
-\else
+%\else
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
   % driver is specified.
@@ -136,7 +143,7 @@
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
   % \DeclareGraphicsExtensions{.eps}
-\fi
+%\fi
 % graphicx was written by David Carlisle and Sebastian Rahtz. It is
 % required if you want graphics, photos, etc. graphicx.sty is already
 % installed on most LaTeX systems. The latest version and documentation can
@@ -403,7 +410,7 @@
 \thanks{T. Menzies is with Computer Science,
 North Carolina State University, North Carolina, USA, 27616 e-mail: tim.menzies@gmail.com).}% <-this % stops a space
 \thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
-}
+
 
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
@@ -489,30 +496,92 @@ given recent research results?
 % creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
-
-
-\section{Introduction}
+ 
+\section{End of Social}
+The story of the Zuckerburg/Gates weekend meeting of 2020 is now legendary.
+Challenged by Gates to do something to really change the world, published his
+famous
+Zuckerburg's howl of protest at the excess of effort being devoted to
+social media:
+\begin{quote}
+I saw the best minds of my generation destroyed by ad revenue madness, sipping hysterical Starbucks, dragging themselves through optimizations of click-thrus, looking for an Google buy-out. Angel-headed hackers (and their backers) burning for the ancient heavenly connection to the cloud-based dynamo in the machinery of the internet, trillions of shiny sparks on their misdirected screens.
+\end{quote}
+Vowing to better focus the intellectual efforts of the planet, 
+Zukerburg devoted a large portion of his considerable wealth to the BrightNet
+project where humans hide their identity  behind avatars and each avatar is
+scored ``up'' or ``down'' after each interaction with others. As the reputation of some avators grew, their ``good name'' became a tradeable commodity (the Gandhi avator recently sold for \$1B). Newbies declined to interact with ``down'' avators, choosing insteaed to only interact with folks who are know to play well with others. 
 
 \section{Collapse Predictors}
 
 Whitehead, msr15, possible to predict periods of steady growth
 as well as impending sudden change in software systems and
-ecosystems. workeres in the software industry  tend towards ``safing''
-prior to implending collapse:
+ecosystems. Faced with impending collapse:
 \bi
+\item Venture capitalists withdraw funds;
+\item Programmers start relocating in droves;
 \ei
-to withdraw cash prior to impending collapse, then jump back in (
+ 
 
-\section{Small Data}
+\section{No more Big Data}
+
+\subsection{The small data revolution}
+
+Peters (icse15) showed that micro sharing allows a community to share small (and somewhat obsficated) data, and predictions from the shared data are better than using all the unobfuscated data (why? cause fayola's obsficates via   averages over instance space so her 
+unobfuscated examples contain more information that raw data)
+
+\section{Auto coding}
+
+Prem's naturalness results means that if we can access large samples of code,
+then we will find many repeated patterns. Which means that if we starting coding some that we think is new, an whole host of recommendor  systems should soon   wake up to propose large additional code chunks and/or test suites. 
+
+Which changes the nature of programming. instead coding go to whoa, we now work on a "hint" basis, where given any problem, we start with the most unique aspect first. after which ai agents start proposing relevant additions or (if we deviate from usual practice) cautions when we leave the mainstream
+
+one side effect of this was to stem the tide of new languages. in 2015, there is a the MLOC rule: not new programming language can be generally used until there is at least 10 million LOC written in that code.  
+
+\subsection{The Great CPU Cooldown}
+
+{\em not sure on this one...}
+
+Ever since the melting of the Greenland icepack (with its associated disastrous impacts on the former European nations), there has been an increasing emphasis on sheppherding existing resources rather than assumption some exponentially increasing resource pool. Now new techniques are required to show that they consume fewer resources than prior innovations. 
+
+
+
+disasters like CRATER become more common (the micrometeorite model that said "columbia ice strike? no worries! even though that model was for far slower/smaller things that what hit columbia). program test suites summarized by data miners as "certification envelopes" that ship with a system reporting when that system is going outside the context where it was tested.
+
+context and locality results changed the nature of science. if everything local then no general models. however, there are cost effective ways of building local models. so it is not everyone civics duty to monitor old policies to see if we ahve moved to a zone where the old no longer applies.
+
+\section{Group Think Fuck (must change this title)}
+
+after the collapse of american public funding for research, the
+perverse effect of competition on researchers lead to a shell game where folks hide their stuff http://link.springer.com/article/10.1007/s11948-007-9042-5
+
+in response to this, academics evolvted challenge partners.
+sort of kinda promise$^2$
+
+end of papers, unapproachable diamonds written by acadamics devoted
+to enshrningin particular ideas
+
+more challenge problems generated by industry and lots of small tools dropping
+back from academ back to industy
+
+
+
 \section{Outsourcing to the next Billion}
 
 Early experiments, out-souricing. suck. then discoverred
 that our-sourced development more regular and  predictable (ye yang, msr 2013) so managers turned to out sourcing to reduce risk in
 software 
 
+\section{Intrinsic Dimensionality}
+
+As we studied more code, a repeated result is that much of that data is superflous, that the metrics we see in code are surface features, echoes of an underlying multi-dimensional structure. Much success in spectral methods for exploiting that underlying structure. Which means much of the old work on metrics simply faded away.
+
+\section{anomalies and locality}
+
+
 \section{Sentient AI}
 
-All the SBSE stuff (e.g. claire degouse et al)
+All the SBSE stuff (e.g. claire degouse et al icse12 etc)
 
 Take the cloud to some place more energy full (floating nearer the sun) but less hospitable to humans. Software {\em herding} more
 than software {\em programming}. Turn lose a herd of AI algorithms
@@ -607,32 +676,7 @@ alternative candidate solutions.
 
 
 \section{Conclusion}
-\blindtext
-
-
-
-
-
-% if have a single appendix:
-%\appendix[Proof of the Zonklar Equations]
-% or
-%\appendix  % for no appendix heading
-% do not use \section anymore after \appendix, only \section*
-% is possibly needed
-
-% use appendices with more than one appendix
-% then use \section to start each appendix
-% you must declare a \section before using any
-% \subsection or using \label (\appendices by itself
-% starts a section numbered zero.)
-%
-
-
-\appendices
-\section{Proof of the First Zonklar Equation}
-Some text for the appendix.
-
-% use section* for acknowledgement
+ 
 \section*{Acknowledgment}
 
 
@@ -669,13 +713,7 @@ The authors would like to thank...
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\end{thebibliography}
+ 
 
 % biography section
 % 
@@ -687,10 +725,7 @@ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 % simpler here.)
 %\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
-
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{picture}}]{John Doe}
-\blindtext
-\end{IEEEbiography}
+ 
 
 % You can push biographies down or up by placing
 % a \vfill before or after them. The appropriate
@@ -705,6 +740,7 @@ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 %\enlargethispage{-5in}
 
 
+\bibliography{refs}
 
 % that's all folks
 \end{document}
