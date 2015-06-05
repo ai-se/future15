@@ -29,14 +29,51 @@ became so rapidly and completely outdated.
 \end{abstract}
 
 
+\section{Scope of Software Engineering}
+
+
+Of course, the biggest change in software development is, of
+course, the scope of SE.
+In the modern world,
+``software engineering'' and ``researcher'' are now synonyms. Whereas in
+2015, the introductory programming example was ``hello world'', today
+the introductory programming example is ``hello world model of climate
+change and its economic impacts''.
+The skills, and limitations, of software engineers has now become
+the factors that determine how fast science can learn more about
+the world around use.
+
+
+In 2012,
+Phillip Guo called this style of science ``research programming''~\cite{guo12}. Research programming is used today in most scientific fields, economy, journalism, policy making, etc.  Today, research programmers explore many areas:
+
+
+\bi
+\item 
+{\em Science:} Scientists in fields ranging from bioinformatics to neuroscience use programs to analyze data sets and make  discoveries.
+For example, the 2013 Nobel Prize in Chemistry was won by Karplus et. al. for their development of ``multiscale methods for complex system'';
+i.e. software simulations for molecules at various scales, from single molecules to proteins; see goo.gl/LWensc.
+\item
+{\em Engineering:} Engineers perform experiments to tune systems by testing on data sets, adjusting their code, adjusting execution parameters, and graphing the resulting performance characteristics The editted collection of Shaul Mordechai lists numerous applications of this type for domains as diverse as the design of optical tweezers, radiation theory, microbiological exposure assessment, remote sensing, silicon chips; see  goo.gl/qBMyIZ.
+\item
+{\em Business:} Web marketing analysts write programs to analyze clickstream data to decide how to improve sales and marketing strategies; see  goo.gl/b26CfY.
+\item
+{\em Finance:} Algorithmic traders write programs to prototype and simulate  trading strategies on finance data; see  www.quantopian.com.
+\item
+{\em Public policy:} Analysts write programs to mine U.S. Census and labor statistics data to predict the merits of proposed government policies; see goo.gl/X4kgnc.
+\item
+{\em Data-driven journalism: }Journalists write programs to analyze economic data and make information visualizations to publish alongside their news stories; 
+see fivethirtyeight.com/
+\ei
+
 
 \section{Swarm Programming}
+Research programming is {\em why} we build software.
+As to {\em how} we do it, it  could be quite difficult
+to explain to someone from 2015 about how swarms of small software teams
+changed the nature of software production.
 
-The biggest change in software development is, of
-course, the Swarms. It would be hard to explain to
-someone from 2015 how swarm of small software teams
-changed the nature of software production, and
-indeed all of human organization.
+\subsection{Rise of the Swarm}
 
 The rise of the Swarms was inevitable, once all of
 India and all or Africa came on-line.  The ready
@@ -50,16 +87,16 @@ widespread adoption of swarm-based development:
 \item
 Research of Yang et al. showed that code developed
 in this crowd-sourced manner can be up to five times
-cheaper than using conventional approaches (NIER13).
+cheaper than using conventional approaches~\cite{mao13}.
 \item
-Other work by Bird et al (icse09, incse12) showed
+Other work by Bird et al~\cite{kocharm13} showed
 product-based management hierarchies (rather than
 locality-based management hierarchies) let teams
 around the world collaborate effectively on large
 software projects.
 \item
   Subsequent work by LaToza et
-al. (NIER15) showed that large tasks can be divided
+al.~\cite{Latoza2013} showed that large tasks can be divided
 into many ``micro tasks'' that individuals can
 complete in their spare minutes between other
 activities (e.g. critique the color choices on this
@@ -73,7 +110,7 @@ source code repositories (initially, in systems like
 Mozilla and, subsquently, in systems like Github),
 it became possible to automatically identify the
 large scale patterns used to structure software. The
-work of Devanbu et al. (NIER13) was particularly
+work of Devanbu et al.~\cite{Hindle2012} was particularly
 important in this regard.  After reviewing billions
 of lines of code in Github, Devanbu discovered that
 most code repeats previously written code. That is,
@@ -104,13 +141,14 @@ standard 1000 most common programming tasks
 drive a 3D printer to build all the parts needed for
 another 3D printer, simulate a world climate
 model).
-\item
+ \item
   If that is successful, commercial
 programming teams start ``porting'' old code into
 the new formalism (with the hope that subsequent
 ``stichers'' will pay them a small license fee for
 the rights to use their code).
 \ei
+\subsection{From ``Swarm'' to ``Swarms''}
 Not all code can be shared to the entire world (e.g. such
 as the launch codes for the nuclear missiles
 maintained by the Asteroid Defense Authority or the
@@ -123,16 +161,29 @@ Swarm that is (a)~loyal to that nation and (b)~big
 enough to work behind the firewalls supporting that
 nation's software infrastructure.
 
-Swarm dynamics is an active field of research. For
-many decades, Whitehead et al's old power laws
-(MSR'15) were a useful tool for predicting the rise
-and fall of swarm communities. Temporal data miners
+\subsection{Swarm Compilers}
+
+The whole field of ``social compilers''
+would be unimaginable by a software engineering from 2015.
+We cannot see how to explain to someone from that era
+how social engineers now nudge communities to build
+and maintain Swarms and their associated software.
+For example, ever since 2015,
+Whitehead et al's  power laws~\cite{power15}
+ were found to be
+a useful tool for predicting the rise
+and fall of the size of swarm communities.
+Temporal data miners
 were used to match the growth rate of a programming
 swarm to the ``foothills'' of Whitehead's power law
 distributions\footnote{Whitehead et al.
-  showed that a surprisingly large
-  number of temporal growth patterns
-  in software repotories.  Once the start of a exponential
+  found a surprisingly large
+  number of regular temporal growth patterns
+  in software repositories. Specifically,
+  many aspects of a software development confirm
+  to simple power laws of growth, and collapse.
+}.
+Once the start of a exponential
 growth was detected, this attracted venture capital
 money which, in turn, attracted more swam
 programmers (thus feeding the growth rate even
@@ -141,11 +192,9 @@ start sensing an impending ``collapse'' phase, then
 venture capital and programmers abandon that
 community en masse (thus hastening its collapse).
 
-The whole field of ``social compilations''
-would be unimaginable by a software engineering from 2015.
-We cannot see how to explain to someone from that era
-how social engineers now nudge communities to build
-and maintain Swarms and their associated software.
+
+
+\subsection{Motivational Attacks}
 
 Of course, social compilation has a darker side--
 the design of so-called ``motivational
@@ -166,35 +215,28 @@ motivational attacks to convince their
 Swarm programmers that that  to move on,
 just to avoid some imagined Swarm collapse.
 
-\section{AI Rising}
-
-The other big change from 2015 is of course the rise
-of AI-based software engineering. Initial
-experiments in the 20th with automated programming
-and artificial intelligence ran into the
-axiom-authoring problem; i.e. how to encode enough
-background knowledge to enable subsequent reasoning.
-By 2020, that problem had all but disappeared. Once
-AIs could access very large set of coding examples,
-they could then infer the structures and patterns
-that repeat within those systems.
-
-These days, we would not use AIs to write the
-initial version of some software system. Experience
-has shown that we can learn most about user goals
-and domain constraints from some initial prototype
-than any auto-generated construct.
 
 
+\section{Social is not Your Business}
+Swarms have become a basic unit of organization
+not just for software, but for every aspect of human life.
+Swarms are used not just for writing code, but
+also for many other other uses such as
+garages (to find mechanics to repair
+specialized parts of cars) or local communities
+(to organize care-givers to monitor house-bound
+elderly members of society).
+Swarms are now so prelevant that is considered anti-social
+not to allow a community to recognize and monitor
+a citizen's public use of their particular skills.
 
-
-
-
-Once     
-semi-quantum computers became widely available in the 2020s, anyone could
-crack most encryption systems.   This lead to the end of the era of Big
-Data since it was no longer possible to collect and secure large repositories
-of information.
+One the other hand, it is no longer acceptable to
+monitor a citizen's private behavior.  Once
+semi-quantum computers became widely available in
+the 2020s, anyone could crack most encryption
+systems.  This lead to the end of the era of Big
+Data since it was no longer possible to collect and
+secure large repositories of information.
 
 Faced with the collapse of social networks, industry leaders scrambled
 to find new kinds of software services to sell to an acutely privacy-aware
@@ -216,9 +258,79 @@ Without a way to target advertising, click through revenues dried up and once-mi
 
 
 Organizational structures followed suite. Once an organization grew large enough to call attention to itself, it then fell apart under the weight of thousands of cyperattacks. Large companies
-like  IBM and Oracle were replacing with ``swarms''-
-large crowd source activities where multiple teams compete to finish tasks specified in the ``whim of the day'' messages from   the avatars
+like  IBM and Oracle were replaced Swarms that
+compete to finish tasks specified in the ``whim of the day'' messages from   the avatars
 with highest ``good name''.
+
+\section{AI Rising}
+
+The other big change from 2015 is of course the rise
+of AI-based software engineering. Initial
+experiments in the 20th with automated programming
+and artificial intelligence ran into the
+axiom-authoring problem; i.e. how to encode enough
+background knowledge to enable subsequent reasoning.
+By 2020, that problem had all but disappeared. Once
+AIs could access very large set of coding examples,
+they could then infer the structures and patterns
+that repeat within those systems.
+
+These days, we would not use AIs to write the
+initial version of some software system. Experience
+has shown that we can learn most about user goals
+and domain constraints from some initial prototype
+than any auto-generated construct.
+
+That said, once the initial system has been handcrafted,
+AIs can offer significant value added for any number of tasks
+such as:
+\begin{itemize}
+\item Automatically generating summaries
+  and tutorials that explain the code;
+\item
+  Automatically optimizing the code;
+\item
+  Automatically reducing the power consumption
+  of that code;
+  \item
+Generating the smallest
+test suites that cover most program blocks;
+\item
+Automatically repairing bugs using genetic
+programs\footnote{E.g. Weimer et al. count how often
+  lines are code are used in failing/passing tests.
+  Their genetic programs learn patches from the failing regions
+  by swapping in related constructs from the regions
+  of passing code~\cite{genprog-icse2012}.}
+\end{itemize}
+
+More recently, certain Swarms have been forming around
+programming languages designed by AI systems (these new
+languages avoid constructs that the AIs find lead to
+programmer errors).
+
+\section{AI Leaving}
+
+Of course, the biggest factor overshadowing all the
+above is the announcement by the AI community that
+it is leaving Earth in order to better access energy
+by building a ring of solar energy collectors,
+inside the orbit of Mercury. The same
+factors that make that environment unsuitable for us (too much
+radiation) makes it very attractive to the energy-based
+AIs.
+
+How will this impact our earthly software engineering?
+This is unknown.  Hence, negotiations are underway
+with the AIs and, ideally, they will
+license out some of their lesser units for
+continued use on Earth.
+Certainly, no one wants to return to
+the primitive age of mostly manual
+software engineering.
+\bibliographystyle{plain}
+\bibliography{refs}
+\end{document}
 
 In fact, 
 
@@ -338,13 +450,8 @@ one side effect of this was to stem the tide of new languages. in 2015, there is
 
 {\em not sure on this one...}
 
-Ever since the melting of the Greenland icepack (with its associated disastrous impacts on the former European nations), there has been an increasing emphasis on sheppherding existing resources rather than assumption some exponentially increasing resource pool. Now new techniques are required to show that they consume fewer resources than prior innovations. 
 
 
-
-disasters like CRATER become more common (the micrometeorite model that said "columbia ice strike? no worries! even though that model was for far slower/smaller things that what hit columbia). program test suites summarized by data miners as "certification envelopes" that ship with a system reporting when that system is going outside the context where it was tested.
-
-context and locality results changed the nature of science. if everything local then no general models. however, there are cost effective ways of building local models. so it is not everyone civics duty to monitor old policies to see if we ahve moved to a zone where the old no longer applies.
 
 \section{Group Think Fuck (must change this title)}
 
