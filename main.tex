@@ -19,50 +19,175 @@ University of California, CA, 95064 e-mail: ejw@cs.ucsc.edu}}%
 \maketitle
 
 \begin{abstract}
-%\boldmath
-Imagine we could travel forward in time to 2050. What would
-we see there? 
-How, and why, would software engineering be different then 
-than now? What disruptions could we predict,
-given recent research results?
+  %\boldmath
+  Looking back from 2050, the current landscape of
+software engineering is so unimaginably different to
+the status quo, even 30 years ago.  In this short article we pretend we are
+explaining to a reader in 2015 just how much of
+their then current thinking about software 
+became so rapidly and completely outdated.
 \end{abstract}
 
-Looking back from 2050, the current landscape of software engineering
-looms imaginably different to the status quo, even 30 years ago. So much has changed including the end of social and the rise of privacy, the end of small data and the era of small data,
-the rise of collapse predictors, the end of agile, the rise of the automatic programming and  AIs.
-In this short article we pretend we are explaining to a reader in 2015 just how much of their then current thinking about software will become so rapidly and completely outdated.
-
-\section{The Collapse of Social}
-
-The biggest change in
-software development is, of course,   the Swarms. It i would be hard to explain to someone from 2015 how swarm of small software teams changed the nature of software production, and indeed all of human organization. 
-
-The rise of the Swarms was inevitable, once all of India and all or Africa came on-line.  The ready availability of the this large group of programmers coincided the discovery of effective next-generation crowd-sourcing technologies.  
-While early experiments in crowd-sourcing were generally less-than-successful,
-several factors lead to widespread adoption of swarm-based development. 
-Research of Yang et al. showed that code developed in this crowd-sourced manner can be up to five times cheaper
-than using conventional approaches (NIER13). 
-Other work by  Bird et al (icse09, incse12) showed product-based management hierarchies (rather than locality-based management hierarchies) let teams around the world collaborate effectively on large software projects.  Subsequent work by LaToza et al. (NIER15) showed that large tasks can be divided into many ``micro tasks''
-that individuals can complete in their spare minutes between other activities
-(e.g. critique the color choices on this screen;  check if these tests cover the important branches of this function).  
-
-Of course, the crowd cannot work on many parts of a system unless all those
-parts are first identified. Once researchers had access to large source code repositories (initially, in systems like Mozilla and, subsquently, in systems
-like Github), it became possible to  automatically identify the large scale patterns used to structure software. The work of Devanbu et al. (NIER13) was particularly important in this regard.  After reviewing billions of lines of code in Github, Devanbu discovered that most code repeats previously written code. That is, for much of our systems, once some small part is developed then those code fragments can be used to retrieve large sections of related support code from prior development. After that, systems development becomes a matter of ``stiching'' together all those fragments-- a task that can be readily divided, parcelled up, and sent to the Swarms.  Decades of Swarm-based development
-has shown that 
-
-Not all code can be shared to the entire world such as  the launch codes for the
-  nuclear missiles maintained by the Asteroid Defense Authority or the 
-  attitude control software for the orbiting mircowave power relay stations. 
-  Accordingly, different Swarms work for different communities. Econcomists
-  now agree that nation states are only viable if their indigenous population
-  is large enough to support a Swarm that is (a)~loyal to that nation and (b)~big enough to work behind the firewalls supporting that nation's  software infrastructure.
-  
-  
 
 
+\section{Swarm Programming}
 
-crowd sourcing experiments were 
+The biggest change in software development is, of
+course, the Swarms. It would be hard to explain to
+someone from 2015 how swarm of small software teams
+changed the nature of software production, and
+indeed all of human organization.
+
+The rise of the Swarms was inevitable, once all of
+India and all or Africa came on-line.  The ready
+availability of the this large group of programmers
+coincided the discovery of effective next-generation
+crowd-sourcing technologies.  While early
+experiments in crowd-sourcing were generally
+less-than-successful, several factors lead to
+widespread adoption of swarm-based development:
+\bi
+\item
+Research of Yang et al. showed that code developed
+in this crowd-sourced manner can be up to five times
+cheaper than using conventional approaches (NIER13).
+\item
+Other work by Bird et al (icse09, incse12) showed
+product-based management hierarchies (rather than
+locality-based management hierarchies) let teams
+around the world collaborate effectively on large
+software projects.
+\item
+  Subsequent work by LaToza et
+al. (NIER15) showed that large tasks can be divided
+into many ``micro tasks'' that individuals can
+complete in their spare minutes between other
+activities (e.g. critique the color choices on this
+screen; check if these tests cover the important
+branches of this function).
+\ei
+Of course, the crowd cannot work on many parts of a
+system unless all those parts are first
+identified. Once researchers had access to large
+source code repositories (initially, in systems like
+Mozilla and, subsquently, in systems like Github),
+it became possible to automatically identify the
+large scale patterns used to structure software. The
+work of Devanbu et al. (NIER13) was particularly
+important in this regard.  After reviewing billions
+of lines of code in Github, Devanbu discovered that
+most code repeats previously written code. That is,
+for much of our systems, once some small part is
+developed then those code fragments can be used to
+retrieve large sections of related support code from
+prior development. After that, systems development
+becomes a matter of ``stiching'' together all those
+fragments-- a task that can be readily divided,
+parcelled up, and sent to the Swarms.
+
+This style of development lead to new paradigms of program development.
+``Stiching'' only works when there are
+materials that can be stitched together. Hence,
+before any new language can become widely used, it
+must pass through:
+\begin{itemize}
+\item
+  A ``sermon'' phase where some guru
+argues that some
+new formalism is a better way to tackle software projects.
+\item
+Hopefully, sermons are followed by a ``coding 1000''
+phase where a community advocating for that language
+writes examples and tutorials about implementing the
+standard 1000 most common programming tasks
+(e.g. search a string, update a window, build an AI,
+drive a 3D printer to build all the parts needed for
+another 3D printer, simulate a world climate
+model).
+\item
+  If that is successful, commercial
+programming teams start ``porting'' old code into
+the new formalism (with the hope that subsequent
+``stichers'' will pay them a small license fee for
+the rights to use their code).
+\ei
+Not all code can be shared to the entire world (e.g. such
+as the launch codes for the nuclear missiles
+maintained by the Asteroid Defense Authority or the
+attitude control software for the orbiting mircowave
+power relay stations).  Accordingly, specialized Swarms
+work just within specialized communities. Economists now
+agree that nation states are only viable if their
+indigenous population is large enough to support a
+Swarm that is (a)~loyal to that nation and (b)~big
+enough to work behind the firewalls supporting that
+nation's software infrastructure.
+
+Swarm dynamics is an active field of research. For
+many decades, Whitehead et al's old power laws
+(MSR'15) were a useful tool for predicting the rise
+and fall of swarm communities. Temporal data miners
+were used to match the growth rate of a programming
+swarm to the ``foothills'' of Whitehead's power law
+distributions\footnote{Whitehead et al.
+  showed that a surprisingly large
+  number of temporal growth patterns
+  in software repotories.  Once the start of a exponential
+growth was detected, this attracted venture capital
+money which, in turn, attracted more swam
+programmers (thus feeding the growth rate even
+more).  Similarly, once the temporal data miners
+start sensing an impending ``collapse'' phase, then
+venture capital and programmers abandon that
+community en masse (thus hastening its collapse).
+
+The whole field of ``social compilations''
+would be unimaginable by a software engineering from 2015.
+We cannot see how to explain to someone from that era
+how social engineers now nudge communities to build
+and maintain Swarms and their associated software.
+
+Of course, social compilation has a darker side--
+the design of so-called ``motivational
+attacks'' where opposing swarms encourage thought
+leaders to make disparaging about opposing Swarms,
+thus inhibiting their growth or hastening their
+demise.  Motivational attacks
+have been shown to be
+surprisingly effective- a mere 1\% difference in the
+early growth rate of a Swarm can delay them so much
+that in a single year, opposing Swarms can capture
+entire markets before the slower Swarms can catch
+up. 
+Defense departments around the world are now
+gearing up for the expected coming of ``social wars''
+where one nation tries to bankrupt another via
+motivational attacks to convince their
+Swarm programmers that that  to move on,
+just to avoid some imagined Swarm collapse.
+
+\section{AI Rising}
+
+The other big change from 2015 is of course the rise
+of AI-based software engineering. Initial
+experiments in the 20th with automated programming
+and artificial intelligence ran into the
+axiom-authoring problem; i.e. how to encode enough
+background knowledge to enable subsequent reasoning.
+By 2020, that problem had all but disappeared. Once
+AIs could access very large set of coding examples,
+they could then infer the structures and patterns
+that repeat within those systems.
+
+These days, we would not use AIs to write the
+initial version of some software system. Experience
+has shown that we can learn most about user goals
+and domain constraints from some initial prototype
+than any auto-generated construct.
+
+
+
+
 
 
 Once     
